@@ -54,3 +54,34 @@ Therefore, SWFRightClick (like its predecessor RightClick.js) intercepts all rig
 
 ##Why bother? Flash is dead!
 Adobe Captivate is heavily used for software simulation in the training industry. Adobe Captivate was stuck using SWFObject 1.x since RightClick.js didn't support SWFobject 2.x without workarounds. I decided to fix RightClick.js to work with SWFObject 2.x, and in the process, wound up rewriting the entire thing. Hopefully someone else will find this useful, too.
+
+##Testing results
+
+###Mac Lion 10.7.3
+* Chrome 17: success
+* Firefox 10.0.2: success
+* Safari 5.1.3: success
+* Opera 11.61: fail - detects right-click, doesn't hide Flash Player context menu
+
+###Windows 7 (32bit)
+* IE 9.0.8: success
+* Chrome 17: success
+* Firefox 10.0.2: success
+* Opera 11.61: fail - detects right-click, doesn't hide Flash Player context menu
+
+###Windows 7 (64bit)
+* IE 9.0.8: success
+* Chrome 17: success
+* Firefox 10.0.2: success
+* Opera 11.61: fail - detects right-click, doesn't hide Flash Player context menu
+
+###Windows XP
+* IE 6: success
+* IE 7: success
+* IE 8: success
+* Firefox 3.0.19: success
+* Firefox 3.6.27: success
+* Firefox 4.0.1: success
+* Chrome 17: success
+* Opera 9.64: fail - detects right-click, doesn't hide Flash Player context menu
+* Opera 10.5.4: fail - detects right-click, doesn't hide Flash Player context menu
