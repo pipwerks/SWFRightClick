@@ -34,7 +34,7 @@ Therefore, SWFRightClick (like its predecessor RightClick.js) intercepts all rig
 ##How to use SWFRightClick
 1. Include SWFRightClick.js in your document's head.
 2. Embed your SWF as usual, but be sure to set `wmode` to `opaque` and `AllowScriptAccess` to `always`. The `wmode` setting is required because it changes Flash Player's relationship with the browser, enabling us to manipulate its DOM element via JavaScript, similar to how `wmode` needs to be changed when trying to place HTML elements on top of the Flash SWF. (If `wmode` is not set to `opaque` (or `transparent`), the SWF will sit on top of everything, regardless of stacking order, and Flash Player will sandbox the SWF, making it stand apart from the rest of the DOM.) When `wmode` is changed, Flash Player becomes a _team_ player, and interacts with DOM elements (albeit on a limited basis). `AllowScriptAccess` is required for ExternalInterface to function.
-2. Invoke `SWFRightClick.capture("MyElementID");` when the DOM is ready. You can also pass a reference to a DOM node, such as
+2. Invoke `SWFRightClick.capture("MyElementID");` after the SWF has been embedded. You can also pass a reference to a DOM node, such as
 
 		var mySWF = document.getElementById("MySwfId");
 		SWFRightClick.capture(mySWF);
